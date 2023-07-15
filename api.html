@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>API Example</title>
+  </head>
+  <body>
+    <h1>API Example</h1>
+    <button onclick="fetchData()">Fetch Data</button>
+    <div id="response"></div>
+
+    <script>
+      function fetchData() {
+        // Make an API request
+        fetch('https://api.example.com/data')
+          .then(response => response.json())
+          .then(data => {
+            // Display the response on the web page
+            document.getElementById('response').innerHTML = JSON.stringify(data);
+          })
+          .catch(error => {
+            console.error('Error:', error);
+          });
+      }
+    </script>
+  </body>
+</html>

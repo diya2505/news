@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="polllink.css">
+   
+</head>
+<body>
+
+    <!-- Place this HTML wherever you want to display the report button/link -->
+<div id="reportButtonContainer">
+    <button id="reportButton">Report Spam/Fake News</button>
+  </div>
+  
+  <!-- Modal for the report form -->
+  <div id="reportModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Report Spam/Fake News</h2>
+      <form id="reportForm">
+        <label for="reportReason" style="display: flex; font-size: 19px">Reason for Reporting:</label>
+        <textarea id="reportReason" rows="4" cols="50" required></textarea>
+        <br>
+        <input type="submit" value="Submit Report">
+      </form>
+    </div>
+  </div>
+  
+  <!-- Page that appears after submitting the report -->
+  <div id="reportConfirmation" style="display: none;">
+    <h2>Report Submitted</h2>
+    <p>Thank you for reporting spam/fake news. We appreciate your contribution!</p>
+  </div>
+  
+  <script src="poll.js"></script>
+</body>
+</html>
+
